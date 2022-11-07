@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Link](https://github.com/Lauraalinda/Front-end-mentor-challenge-Tip-Calculator)
-- Live Site URL: [Live site]()
+- Live Site URL: [Live site](https://spontaneous-granita-b723eb.netlify.app)
 
 ## My process
 
