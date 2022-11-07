@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinda's tip calculator</title>
+</head>
+<body>
+    <h2>SPLI<br>TTER</h2>
+    <div class="container">
+        <div class ="content-container">
+            <form class="bill-form"> <!--why is this in a form and form control-->
+                <h4>Bill</h4>
+                <input class="form-control bill-amount" type="text" placeholder="0">
+            </form>
+            <form class="tip-form"> <!--where does ths one close-->
+                <h4>Select Tip %</h4>
+                <div class ="tip">
+                    <button class="btn" id="0.05">5%</button>
+                    <button class="btn" id="0.1">10%</button>
+                    <button class="btn" id="0.15">15%</button>
+                    <button class="btn" id="0.25">25%</button>
+                    <button class="btn" id="0.5">50%</button>
+                    <input class="custom-tip" type="text" placeholder="Custom"/>
+                </div>
+                <form class ="number-of-people-form">
+                <h4>Number of People</h4>
+                <input class="form-control number-of-people" type="text" placeholder="0" />
+                </form>
+        </div>
+        <div class="calculator-container">
+            <div class="tips-content">
+               <div class="tip-container-calculator">
+                   <div>
+                       <h4 class="tip-amount-header">Tip Amount</h4>
+                       <p class="tip-amount-person">/ person</p>
+                   </div>
+                   <h4 class="tip-amount">$0.00</h4>
+               </div>
+               <div class="tip-container-calculator">
+                   <div>
+                       <h4 class="tip-amount-header">Total</h4>
+                       <p class="tip-amount-person">/ person</p>
+                   </div>
+                   <h4 class="total-amount">$0.00</h4>
+               </div>
+            </div>
+            <button class="reset-btn">RESET</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

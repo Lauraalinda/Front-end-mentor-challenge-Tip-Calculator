@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Strongcyan: hsl(172, 67%, 45%);
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+html,body{
+    height: 100%;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--Lightgrayishcyan);
+    display: flex;
+    border:2px solid green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+body > h2{
+    font-size: 1.5rem;
+    color: var(--Verydarkcyan);
+    letter-spacing: 0.5rem;
+    margin-bottom: 4rem;
+}
+.container{
+    max-width: 800px;
+    border: 2px solid green;
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-control{
+    width: 100%;
+    display: flex;
+    background-color: var(--Verylightgrayishcyan);
+    border: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 24px;
+    margin-top: 5px;
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    color: var(--Verydarkcyan);
+    font-weight: 700;
+} 
+.form-control::placeholder{
+    color: var(--Grayishcyan);
+    font-weight: 500;
+} 
+.form-control:focus{ /*more about form-control*/
+    outline: var(--Strongcyan) auto 1px;
+}
+.form-control-error{
+    outline: orange auto 1px;
+}
+form i{
+    position: relative;
+    top: 45px;
+    margin-left: 10px;
+}
+.icon{
+    color: var(--Darkgrayishcyan);
+}
+.tip{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 100px;
+    align-items: center;
+}
+.tip-form{
+    margin-top: 10px;
+}
+.tip-form h4{
+    font-size: 14px;
+    color: var(--Darkgrayishcyan);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.tip button{
+    background-color: var(--Verydarkcyan);
+    border: none;
+    font-size: 14px;
+    color: var(--White);
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tip button:hover{
+    background-color: var(--Strongcyan);
+    color: black;
+}
+.custom-tip{
+    background-color: var(--Verylightgrayishcyan);
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    color: var(--Verydarkcyan);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding:0 10px ;
+    text-align: right;
+}
+.custom-tip::placeholder{
+    text-align: center;
+}
+.custom-tip:focus{
+    outline: var(--Strongcyan) auto 1px;
+}
+.calculator-container{
+    height: 100%;
+    background-color: var(--Verydarkcyan);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tip-container-calculator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tip-amount, .total-amount{
+    color:var(--Strongcyan);
+    font-size: 32px;
+    font-weight: 600;
+}
+.reset-btn{
+    background-color: var(--Strongcyan);
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tip-amount-header{
+    color: var(--White);
+    font-size: 14px;
+    font-weight: 700;
+}
+.tip-amount-person{
+    color: var(--Grayishcyan);
+}
+.tips-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* @media screen and (max-width:768px){
+    html,body{
+      background-color: pink;
+    }
+  }
+@media screen and (max-width:480px){
+  html,body{
+    background-color: orangered;
+  }
+} */
+@media screen and (max-width: 768px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .form-control{
+        font-size: 18px;
+    }
+    .tip-form h4{
+        font-size: 12px;
+    }
+    .tip button{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .custom-tip{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .tip-amount{
+        font-size: 24px;
+    }
+    .tip-amount-header{
+        font-size: 12px;
+    }
+    .tip-amount-person{
+        font-size: 12px;
+    }
+    .reset-btn{
+        font-size: 12px;
+        height: 30px;
+    }
+}
