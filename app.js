@@ -71,5 +71,5 @@ const validateInput =() => {
           document.querySelector(".total-amount").innerHTML =`$${totalAmount}`;
           }
       
-        })
+     })
   })
