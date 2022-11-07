@@ -70,5 +70,6 @@ const validateInput =() => {
           document.querySelector(".tip-amount").innerHTML =`$${tipAmount}`;
           document.querySelector(".total-amount").innerHTML =`$${totalAmount}`;
           }
-      })
+      
+        })
   })
